@@ -1,0 +1,6 @@
+%body
+ -if user_signed_in?
+  %a{:href => 'destroy_user_session'} Sign out
+ -else 
+  %a{:href => 'new_user_registration'} Sign up
+  %a{:href => 'new_user_session'} Sign in
